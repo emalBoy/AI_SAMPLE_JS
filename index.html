@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI TEST</title>
+    <style>
+        * {
+            user-select: none;
+        }
+
+        html,body {
+            background-color: rgb(32,32,32);
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            text-align: center;
+            color: white;
+            font-family: berlin sans fb;
+            font-size: 50px;
+            border-radius: 25px;
+            border: 2px solid red;
+            box-shadow: 0px 5px 10px red;
+        }
+
+        .app {
+            visibility: hidden;
+            color: yellow;
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        label {
+            font-size: 80px;
+        }
+
+        input {
+            height: auto;
+            outline: none;
+            font-size: 50px;
+            text-align: center;
+            width: 95%;
+            border: 1px solid white;
+            border-left: 6px solid aqua;
+            border-right: 6px solid aqua;
+            border-radius: 5px;
+            background-color: transparent;
+            color: white;
+            margin-top: 2%;
+        }
+
+        input:focus {
+            background-color: black;
+        }
+
+        #output {
+            color: white;
+            background-color: black;
+            font-size: 50px;
+            margin-top: 2%;
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title" id="title">TURN ON JAVASCRIPT!</div>
+    <div id="app" class="app">
+        <label>Your Input</label><br>
+        <input autofocus="" spellcheck="false" id="input" placeholder="Press ENTER after input" type="text">
+    </div>
+    <div id="output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
